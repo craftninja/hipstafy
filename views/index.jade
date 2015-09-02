@@ -1,8 +1,10 @@
 extends layout
 
 block content
-  p Write a sentance or two, and we'll Hipstafy it for you!
-  form(action="/" method="post")
-    input(type="textarea" name="unhiptext")
-    input(type="submit" value="Hipstafy")
-  p= hipstafied
+  div(class='one-third')
+    h4 Write a sentance or two, and we'll Hipstafy it for you!
+    form(action="/" method="post")
+      textarea(name="unhiptext")
+      input(type="submit" class="form-button" value="Hipstafy")
+  div(class='one-third')
+    p= hipstafied
